@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './style.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AuthContextProvider } from './Context/AuthContext/AuthContextProvider';
+import { IpContext } from './Context/IpCon/IpContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <React.StrictMode>
-    <App />
+    <AuthContextProvider>
+      <IpContext>
+      <App />
+      </IpContext>
+    </AuthContextProvider>
   </React.StrictMode>
 );
 
