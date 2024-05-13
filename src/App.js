@@ -44,7 +44,8 @@ function App() {
   const {addy} = ContextConsumer();
   
   const router = createBrowserRouter(createRoutesFromElements(
-    <Route path="/" element={<Root/>}>
+    <Route path ='/' element ={<Navigate to='ejuandyreact' />}>
+    <Route path="ejuandyreact" element={<Root/>}>
       <Route index element={<Home/>}/>
       <Route path="form" element={<FinForm />}/>
       <Route path='admin' element={addy ? <AdminRoot/> :<Navigate to='/'/> }>
@@ -52,6 +53,7 @@ function App() {
         <Route path='auth' element={!user ? <Login/> : <Navigate to ='..' />} />
       </Route>
 
+    </Route>
     </Route>
   ))
   return (

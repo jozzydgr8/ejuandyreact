@@ -44,7 +44,13 @@ export const Navbar = ()=>{
                     <a href="#entertainment-section" className="nav-link"> entertainments</a>
                 </li>
 
+                <li className='nav-item'>
+                    <a className='nav-link' href='http://www.gistmetvmag.blogspot.com/' target='_blank' >Blog</a>
+                </li>
+
                 {addy && <li className='nav-item'><NavLink className='nav-link' to='admin'>view forms</NavLink></li>}
+
+
             </ul>
 
         </div>
