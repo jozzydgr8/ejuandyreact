@@ -20,7 +20,7 @@ body{
 .container-fluid{
     padding: 7% 10%;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5{
     text-transform: uppercase;
     margin: 2% 0;
 }
@@ -260,6 +260,9 @@ img{
 
 
 /* *******footer-section*** */
+#footer-section {
+    text-transform: lowercase !important;
+}
 #footer-section .container-fluid{
     padding: 3% 5%;
 }

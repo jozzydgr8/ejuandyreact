@@ -3,6 +3,7 @@ import { Bus } from "./Bus"
 import { Dist } from "./Dist"
 import { Entertainment } from "./Entertainment"
 import { Fintech } from "./FinTech"
+import { Footer } from "./Footer"
 import { Header } from "./Header"
 
 export const Home = ()=>{
@@ -14,6 +15,7 @@ export const Home = ()=>{
             <Fintech />
             <Bus/>
             <Entertainment />
+            <Footer />
         </div>
     )
 }
